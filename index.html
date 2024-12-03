@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vivek Kumar</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
+    <script
+      src="https://kit.fontawesome.com/ce51d920cf.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/github-calendar/dist/github-calendar.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <img
+        src="./assets/arrow_circle_up_44dp_EA3323_FILL1_wght400_GRAD0_opsz48.png"
+        alt="Arrow icon"
+        class="top-icon show"
+        onclick="location.href='./#profile'"
+      />
+      <nav id="desktop-nav">
+        <div class="logo">Vivek Kumar</div>
+        <div>
+          <ul class="nav-links">
+            <li><a href="#profile">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#statistics">Statistics</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <nav id="hamburger-nav">
+        <div class="logo">Vivek Kumar</div>
+        <div class="hamburger-menu">
+          <div
+            class="hamburger-icon"
+            onclick="toggleMenu()"
+            aria-label="Toggle menu"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="menu-links">
+            <ul>
+              <li><a href="#profile" onclick="toggleMenu()">Home</a></li>
+              <li><a href="#about" onclick="toggleMenu()">About</a></li>
+              <li>
+                <a href="#experience" onclick="toggleMenu()">Skills</a>
+              </li>
+              <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+              <li>
+                <a href="#statistics" onclick="toggleMenu()">Statistics</a>
+              </li>
+              <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div id="profile">
+        <div class="section__text">
+          <p class="section__text__p1">Hello, I'm</p>
+          <h1 class="title">Vivek Kumar</h1>
+          <p class="section__text__p2 multiple_text"><span id="typewriter"></span><span id="cursor">|</span></p>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2"
+              onclick="openAndDownload()"
+            >
+              <i class="fa-solid fa-download fa-sm" style="color: #e00b0b"></i>
+              Resume
+            </button>
+            <button
+              class="btn btn-color-1"
+              onclick="location.href='./#contact'"
+            >
+              Contact Info
+            </button>
+          </div>
+          <div id="socials-container">
+            <img
+              src="./assets/linkedin logo.png"
+              alt="My linkedin profile"
+              class="icon"
+              onclick="window.open('https://www.linkedin.com/in/vivekkmrpaswan/', '_blank')"
+            />
+            <img
+              src="./assets/github logo.png"
+              alt="My Github profile"
+              class="icon"
+              onclick="window.open('https://github.com/vivekkmrpaswan', '_blank')"
+            />
+          </div>
+        </div>
+      </div>
+      <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+          <div class="section__pic-container">
+            <img
+              src="./assets/Untitled Project.jpg"
+              alt="profile pic"
+              class="about-pic"
+            />
+          </div>
+          <div class="about-details-container">
+            <div class="about-container">
+              <div class="details-container">
+                <img
+                  src="./assets/workspace_premium_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <h3>Front-End Development</h3>
+                <p>
+                  Optimize the user experience using HTML,JavaScript and CSS to
+                  bring concepts to life. Develop and maintain the user
+                  interface by following SEO best practices. .
+                </p>
+              </div>
+              <div class="details-container">
+                <img
+                  src="./assets/workspace_premium_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <h3>Back-End Development</h3>
+                <p>
+                  Specialized in Node.js and Express.js development and can
+                  offer you a variety of backend solutions to match your
+                  business needs. .
+                </p>
+              </div>
+              <!-- <div class="details-container">
+                <img
+                  src="./assets/school_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.png"
+                  alt="Education icon"
+                  class="icon"
+                />
+                <h3>Education</h3>
+                <p>B.Tech <br />Electrical &amp; Electronics Engineering</p>
+              </div> -->
+            </div>
+            <div class="text-container">
+              <p>
+                A passionate Full Stack Developer with a talent for building and
+                designing websites and web applications from the ground up. The
+                journey in web development has led to mastering a range of
+                technologies, including HTML, CSS, SCSS, JavaScript, and React,
+                used to create dynamic, responsive, and user-friendly digital
+                experiences. In addition to front-end development, expertise
+                extends to server-side programming with Node.js and Express.js,
+                ensuring applications are not only visually appealing but also
+                robust and scalable.
+              </p>
+            </div>
+          </div>
+        </div>
+        <img
+          src="./assets/keyboard_double_arrow_down_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.png"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='./#experience'"
+        />
+      </section>
+      <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Skills</h1>
+        <div class="experience-details-container">
+          <div class="about-container">
+            <div class="details-container">
+              <h2 class="experience-sub-title">Frontend Development</h2>
+              <div class="article-container">
+                <article>
+                  <div class="icon">
+                    <i
+                      class="fa-brands fa-html5 fa-beat fa-2xl"
+                      style="color: #b197fc"
+                    ></i>
+                  </div>
+                  <div>
+                    <h3>HTML</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+                <article>
+                  <div class="icon">
+                    <i
+                      class="fa-brands fa-css3-alt fa-beat fa-2xl"
+                      style="color: #b197fc"
+                    ></i>
+                  </div>
+                  <div>
+                    <h3>CSS</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+                <article>
+                  <div class="icon">
+                    <i
+                      class="fa-brands fa-sass fa-beat fa-2xl"
+                      style="color: #b197fc"
+                    ></i>
+                  </div>
+                  <div>
+                    <h3>SASS</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <div class="icon">
+                    <i
+                      class="fa-brands fa-js fa-beat fa-2xl"
+                      style="color: #b197fc"
+                    ></i>
+                  </div>
+                  <div>
+                    <h3>JavaScript</h3>
+                    <p>Basic</p>
+                  </div>
+                </article>
+                <article>
+                  <div class="icon">
+                    <i
+                      class="fa-solid fa-scroll fa-beat fa-2xl"
+                      style="color: #b197fc"
+                    ></i>
+                  </div>
+                  <div>
+                    <h3>TypeScript</h3>
+                    <p>Basic</p>
+                  </div>
+                </article>
+                <article>
+                  <div class="icon">
+                    <i
+                      class="fa-solid fa-dharmachakra fa-beat fa-2xl"
+                      style="color: #b197fc"
+                    ></i>
+                  </div>
+                  <div>
+                    <h3>Chakra UI</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <div class="details-container">
+              <h2 class="experience-sub-title">Backend Development</h2>
+              <div class="article-container">
+                <article>
+                  <div class="icon">
+                    <i
+                      class="fa-solid fa-database fa-beat fa-2xl"
+                      style="color: #b197fc"
+                    ></i>
+                  </div>
+                  <div>
+                    <h3>My-SQL</h3>
+                    <p>Basic</p>
+                  </div>
+                </article>
+                <article>
+                  <div class="icon">
+                    <i
+                      class="fa-brands fa-node-js fa-beat fa-2xl"
+                      style="color: #b197fc"
+                    ></i>
+                  </div>
+                  <div>
+                    <h3>Node JS</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <div class="icon">
+                    <i
+                      class="fa-solid fa-gear fa-beat fa-2xl"
+                      style="color: #b197fc"
+                    ></i>
+                  </div>
+                  <div>
+                    <h3>Express JS</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <div class="icon">
+                    <i
+                      class="fa-brands fa-github fa-beat fa-2xl"
+                      style="color: #b197fc"
+                    ></i>
+                  </div>
+                  <div>
+                    <h3>Git</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img
+          src="./assets/keyboard_double_arrow_down_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.png"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='./#projects'"
+        />
+      </section>
+      <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+          <div class="about-container-project">
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/project-1.png"
+                  alt="Project 1"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title Project-title">Nexus B2B-Connection</h2>
+              <div class="p-description">
+                <p>
+                  NEXUS B2B-CONNECTION combines a buyer database of over 270M
+                  contacts and powerful sales engagement and automation tools in
+                  one, easy-to-use platform.
+                </p>
+                <p style="color: #0099ff; font-weight: 600">
+                  <strong style="color: black">Tech Stack:</strong><br />
+                  HTML | CSS
+                </p>
+              </div>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 Project-btn"
+                  onclick="window.open('https://github.com/Mayank1st/Beas-Boolean-009?tab=readme-ov-file', '_blank')"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2 Project-btn"
+                  onclick="window.open('https://nexusb2b.netlify.app/', '_blank')"
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/project-2.png"
+                  alt="Project 2"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title Project-title">
+                Code Visualizer
+              </h2>
+              <div class="p-description">
+                <p>
+                  The Algorithm Visualizer is a web-based tool designed to help
+                  users understand and visualize the workings of various
+                  algorithms.
+                </p>
+                <p style="color: #0099ff; font-weight: 600">
+                  <strong style="color: black">Tech Stack:</strong><br />
+                  HTML | CSS | JavaScript
+                </p>
+              </div>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 Project-btn"
+                  onclick="window.open('https://github.com/sayanroy-bash/Code-Visualizer/tree/main', '_blank')"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2 Project-btn"
+                  onclick="window.open('https://incomparable-jalebi-1ecef7.netlify.app/', '_blank')"
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/project-3.png"
+                  alt="Project 3"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title Project-title">Watch Together</h2>
+              <div class="p-description">
+                <p>
+                  Web Application where users can join a room, share a YouTube
+                  video link, and watch the video together with perfect
+                  synchronization.
+                </p>
+                <p style="color: #0099ff; font-weight: 600">
+                  <strong style="color: black">Tech Stack:</strong><br />
+                  HTML | CSS | React | Node.js | Socket.io | jwt | Mongoose |
+                  MongoDB
+                </p>
+              </div>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 Project-btn"
+                  onclick="window.open('https://github.com/whyshashi/Video_Sync_App/tree/main', '_blank')"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2 Project-btn"
+                  onclick="window.open('https://watch-2-gether.vercel.app/', '_blank')"
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img
+          src="./assets/keyboard_double_arrow_down_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.png"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='./#statistics'"
+        />
+      </section>
+      <section id="statistics">
+        <p class="section__text__p1">Browse My</p>
+        <h1 class="title">Github Statistics</h1>
+
+        <div id="calendar-container">
+          <!-- Placeholder for the calendar -->
+          <div class="calendar"></div>
+        </div>
+
+        <div id="languages">
+          <div style="color: #0099ff"><strong>Most Used Languages</strong></div>
+          <!-- Languages will be dynamically added here -->
+        </div>
+        <img
+          src="./assets/keyboard_double_arrow_down_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.png"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='./#contact'"
+        />
+      </section>
+      <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+          <div class="contact-info-container">
+            <i class="fa-solid fa-envelope fa-2xl" style="color: #000000"></i>
+            <p>
+              <a href="mailto:exampleemail@email.com"
+                >vivekkmrpaswan@email.com</a
+              >
+            </p>
+          </div>
+          <div class="contact-info-container">
+            <i class="fa-brands fa-linkedin fa-2xl" style="color: #000000"></i>
+            <p>
+              <a
+                href="https://www.linkedin.com/in/vivekkmrpaswan/"
+                target="_blank"
+                >LinkedIn</a
+              >
+            </p>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <p>Copyright &#169; 2024 Vivek Kumar. All Rights Reserved.</p>
+      </footer>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path
+        fill="#0099ff"
+        fill-opacity="1"
+        d="M0,192L60,213.3C120,235,240,277,360,272C480,267,600,213,720,181.3C840,149,960,139,1080,149.3C1200,160,1320,192,1380,208L1440,224L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
+      ></path>
+    </svg>
+    <script src="https://cdn.jsdelivr.net/npm/github-calendar/dist/github-calendar.min.js"></script>
+    <script>
+      // Initialize the calendar
+      GitHubCalendar(".calendar", "vivekkmrpaswan", {
+        responsive: true, // Makes the calendar responsive
+      });
+    </script>
+  </body>
+  <script src="script.js"></script>
+</html>
